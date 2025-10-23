@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>The Office Fan Page — Inicio</title>
+    <link rel="icon" href="logo.jpg" />
+    <link rel="stylesheet" href="css\style.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="contenedor-cabecera">
+        <img class="logo-oficina" src="img/logo.jpg" alt="The Office logo" />
+        <nav class="menu-principal" id="menu">
+          <ul class="lista-navegacion">
+            <li><a class="activo" href="index.html">Inicio</a></li>
+            <li><a href="personajes.html">Personajes</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Portada -->
+    <section class="portada-principal">
+      <div class="caja-hero">
+        <h1 class="titulo-hero">
+          Bienvenid@ a la Fan Page de <span class="resaltar">The Office</span>
+        </h1>
+        <p class="subtitulo-hero">
+          Humor incómodo, oficinas, bromas épicas y muchas tazas de café
+        </p>
+        <div class="botones-hero">
+          <a class="boton-principal" href="personajes.html">Ver personajes</a>
+          <a class="boton-secundario" href="#momentos">Momentos épicos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Sobre la serie -->
+    <section class="seccion-blanca">
+      <div class="contenido-ancho">
+        <h2>Sobre la serie</h2>
+        <p class="texto-centrado">
+          The Office (US) narra la vida de los empleados de Dunder Mifflin en
+          Scranton. Su formato mockumentary y el desarrollo de personajes tan
+          únicos la volvieron un clásico.
+        </p>
+
+        <div class="cards-info">
+          <article class="tarjeta">
+            <img src="img\elenco.jpeg" alt="Elenco" />
+            <h3>Un elenco inolvidable</h3>
+            <p>
+              Michael, Dwight, Jim, Pam, Angela, Stanley… cada personaje aporta
+              algo único y memorable.
+            </p>
+          </article>
+
+          <article class="tarjeta">
+            <img src="img\elenco2.jpg" alt="Momentos" />
+            <h3>Humor incómodo</h3>
+            <p>
+              El poder del silencio y la mirada a cámara: comedia que nace de lo
+              cotidiano.
+            </p>
+          </article>
+
+          <article class="tarjeta">
+            <img src="img\elenco3.jpg" alt="Oficina" />
+            <h3>Formato documental</h3>
+            <p>
+              Falso documental que hace al espectador cómplice de situaciones
+              hilarantes.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Frases icónicas -->
+    <section class="frases-icónicas">
+      <div class="contenido-ancho">
+        <h2>Frases que no olvidarás</h2>
+        <div class="rejilla-frases">
+          <div class="frase-caja">
+            <blockquote>“Eso dijo ella”</blockquote>
+            <cite>— Michael Scott</cite>
+          </div>
+          <div class="frase-caja">
+            <blockquote>
+              “Hoy me desperté decidido a hacer una cosa: ganar.”
+            </blockquote>
+            <cite>— Dwight</cite>
+          </div>
+          <div class="frase-caja">
+            <blockquote>
+              “Soy madrugador y noctámbulo. Entonces, soy sabio y tengo
+              gusanos.”
+            </blockquote>
+            <cite>— Michael Scott</cite>
+          </div>
+          <div class="frase-caja">
+            <blockquote>“Soy Kelly Kapoor, The Business B * Tch”</blockquote>
+            <cite>— Kelly Kapoor</cite>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Momentos memorables -->
+    <section id="momentos" class="mini-galeria seccion-blanca">
+      <div class="contenido-ancho">
+        <h2>Momentos memorables</h2>
+        <div class="rejilla-mini">
+          <img src="img\michaeldwight.jpg" alt="Michael y Dwight" />
+          <img src="img\nodios.gif" alt="Michael gif" />
+          <img src="img\dwightversion.gif" alt="Dwight gif" />
+          <img src="img\pamjim.jpg" alt="Pam y Jim" />
+          <img src="img\juntas.jpg" alt="Conference Room" />
+          <img src="img\oficina.jpg" alt="Oficina interior" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Mini sección de fans -->
+    <section class="seccion-amarilla">
+      <div class="contenido-ancho">
+        <h2>Únete al club de fans</h2>
+        <p>
+          Suscríbete para recibir trivia, memes y noticias sobre Dunder Mifflin.
+        </p>
+        <form
+          class="form-suscripcion"
+          action="#"
+          method="post"
+          onsubmit="alert('¡Gracias por suscribirte!'); return false;"
+        >
+          <input
+            class="campo-texto"
+            type="email"
+            placeholder="Tu correo electrónico"
+            required
+          />
+          <button class="boton-oscuro" type="submit">Suscribir</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="pie-pagina">
+      <div class="contenido-ancho texto-pie">
+        <p>© 2025 Fan page hecha por <strong>Adán Ballesillo</strong></p>
+        <p class="pequenio">Imágenes tomadas de la web</p>
+      </div>
+    </footer>
+  </body>
+</html>

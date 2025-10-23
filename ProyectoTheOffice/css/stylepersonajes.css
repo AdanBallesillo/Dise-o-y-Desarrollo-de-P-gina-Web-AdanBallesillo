@@ -1,0 +1,55 @@
+  
+      /*Estilos adicionales a Bootstrap*/
+      :root {
+        --amarillo: #ffcc00;
+        --azul: #0a5cff;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        background: #f7f7f7;
+        color: #222;
+      }
+      .cab {
+        background: var(--azul);
+        color: white;
+        padding: 14px 0;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+      }
+      .logo-nav {
+        width: 140px;
+      }
+      .titulo-seccion {
+        margin-top: 28px;
+        margin-bottom: 18px;
+      }
+      .tarjeta-personaje img {
+        height: 280px;
+        object-fit: cover;
+      }
+      .fondo-amarillo {
+        background: linear-gradient(90deg, #fff7d6, #fff0b8);
+        padding: 24px;
+        border-radius: 12px;
+      }
+      .etiqueta {
+        background: var(--amarillo);
+        padding: 6px 10px;
+        border-radius: 8px;
+        font-weight: 700;
+      }
+
+      .fondo-modal {
+        background-color: #fffdf6;
+        border: 3px solid #e2b714;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        border-radius: 15px;
+      }
+      .modal-title {
+        font-family: "Poppins", sans-serif;
+        color: #222;
+      }
+      .modal-body p {
+        font-size: 1.1rem;
+        color: #333;
+      }
+  

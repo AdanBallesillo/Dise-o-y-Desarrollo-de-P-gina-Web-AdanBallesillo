@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contacto — The Office Fan Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .fondo-principal {
+        background: linear-gradient(180deg, #f8fafc, #eef2ff);
+      }
+    </style>
+  </head>
+  <body class="fondo-principal font-sans">
+    <!-- NAV -->
+    <header class="bg-blue-700 text-white p-4 shadow">
+      <div class="max-w-6xl mx-auto flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="img/logo.jpg" alt="Logo" class="w-28" />
+        </a>
+        <nav class="space-x-6 hidden md:block">
+          <a href="index.html" class="hover:underline">Inicio</a>
+          <a href="personajes.html" class="hover:underline">Personajes</a>
+          <a href="contacto.html" class="font-bold underline">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto mt-10 p-6 bg-white rounded-xl shadow-lg">
+      <h1 class="text-3xl font-bold text-center text-gray-800">
+        ¡Hablemos! — Contacto y Suscripciones
+      </h1>
+      <p class="text-center text-gray-600 mt-2">
+        Envíanos un mensaje, suscríbete o síguenos en redes para contenido
+        exclusivo.
+      </p>
+
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <!-- Formulario -->
+        <section>
+          <h2 class="text-xl font-semibold mb-3">Envía un mensaje</h2>
+          <form
+            class="space-y-4"
+            onsubmit="alert('Mensaje enviado'); return false;"
+          >
+            <div>
+              <label class="block text-sm font-medium text-gray-700"
+                >Nombre</label
+              >
+              <input
+                type="text"
+                required
+                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 p-2"
+                placeholder="Tu nombre"
+              />
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700"
+                >Correo</label
+              >
+              <input
+                type="email"
+                required
+                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2"
+                placeholder="tu@correo.com"
+              />
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700"
+                >Asunto</label
+              >
+              <input
+                type="text"
+                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2"
+                placeholder="Ej.: Consulta sobre personajes"
+              />
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700"
+                >Mensaje</label
+              >
+              <textarea
+                rows="5"
+                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2"
+                placeholder="Escribe tu mensaje..."
+              ></textarea>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <button
+                type="submit"
+                class="bg-blue-700 text-white px-4 py-2 rounded font-semibold hover:bg-blue-800"
+              >
+                Enviar mensaje
+              </button>
+              <button
+                type="button"
+                class="bg-yellow-400 text-black px-3 py-2 rounded font-semibold"
+                onclick="alert('Suscrito');"
+              >
+                Suscribirme
+              </button>
+            </div>
+          </form>
+        </section>
+
+        <!-- Tarjeta redes -->
+        <aside>
+          <h2 class="text-xl font-semibold mb-3">Contacto rápido</h2>
+          <div class="p-4 border rounded-lg">
+            <p class="font-medium">Dunder Mifflin — Scranton</p>
+            <p class="text-sm text-gray-600 mt-2">Tel: +1 555-123-4567</p>
+            <p class="text-sm text-gray-600">
+              Horario: Lunes a Viernes — 9:00 a 17:00
+            </p>
+            <div class="mt-4">
+              <h3 class="font-medium">Síguenos</h3>
+              <div class="flex gap-3 mt-2">
+                <a class="px-3 py-2 bg-blue-600 text-white rounded">Twitter</a>
+                <a class="px-3 py-2 bg-blue-800 text-white rounded"
+                  >Instagram</a
+                >
+                <a class="px-3 py-2 bg-blue-900 text-white rounded">Facebook</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 p-4 bg-yellow-50 rounded-lg">
+            <h4 class="font-semibold">Frase del día</h4>
+            <p class="italic mt-2">
+              “En un mundo ideal, yo tendría los diez dedos en mi mano izquierda
+              y la derecha sería simplemente para lanzar golpes.” — &nbsp;<span
+                class="font-bold"
+                >Dwight</span
+              >
+            </p>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="max-w-6xl mx-auto mt-10 text-center text-gray-500 py-6">
+      © 2025 The Office Fan Page — Proyecto hecho por Adán Ballesillo
+    </footer>
+  </body>
+</html>
